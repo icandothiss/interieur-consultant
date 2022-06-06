@@ -1,0 +1,325 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  color: #ffffff;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  line-height: 1;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  background-color: #181719;
+  font-family: Montserrat;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  width: 100%;
+}
+
+.logo {
+  border: 1px solid #ffffff;
+  font-family: Crimson Pro;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 8px;
+  display: inline-block;
+  margin-top: 27px;
+  margin-left: 20px;
+  white-space: nowrap;
+  margin-bottom: 38px;
+  margin-right: 350px;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #181719;
+  width: 100%;
+  margin-top: 45px;
+  min-height: 100vh;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding-bottom: 150px;
+  left: -100%;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  z-index: 1;
+}
+nav {
+  display: flex;
+}
+.logo {
+  width: fit-content;
+  position: relative;
+  left: 0;
+}
+label {
+  font-size: 22px;
+  width: 100%;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a:active {
+  font-weight: 700px;
+  border-bottom: 2px solid #ffffff;
+}
+.btn-cancel {
+  order: 1;
+  padding-top: 25px;
+  padding-right: 30px;
+  position: absolute;
+}
+
+#check:checked ~ ul {
+  left: 0;
+}
+.fa-xmark {
+  display: none;
+  width: fit-content;
+  margin-left: auto;
+}
+.fa-bars {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+}
+#check:checked ~ label #cancel {
+  display: block;
+}
+#check:checked ~ label #btn {
+  display: none;
+}
+#check:checked ~ .logo {
+  left: -100%;
+}
+#check {
+  display: none;
+}
+.flex .left h1 {
+  font-family: Lora;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 25px;
+  padding-left: 12px;
+}
+.parg {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 250px;
+  padding-left: 12px;
+  margin-bottom: 25px;
+}
+.read {
+  display: flex;
+}
+.readmore {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 12px;
+  padding-right: 15px;
+  margin-bottom: 37px;
+}
+.background {
+  max-width: 375px;
+
+  margin-right: 0;
+}
+.background img {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 25px;
+}
+.aliza-webber {
+  max-width: 300px;
+  background-color: #181710;
+  min-height: 138px;
+  margin-left: 30px;
+  margin-top: -55px;
+  position: relative;
+}
+.img-container {
+  max-width: 62px;
+  padding: 5px 12px;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+.img-info img {
+  max-width: 36px;
+  border-radius: 37px;
+}
+.img-info {
+  overflow: hidden;
+  display: flex;
+}
+.name {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.profession {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.info {
+  margin-top: 16px;
+}
+.designed {
+  font-family: Lora;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 210px;
+  margin-left: 19px;
+}
+@media only screen and (min-width: 1024px) {
+  nav {
+    width: auto;
+    margin-bottom: 169px;
+  }
+  nav ul {
+    left: 0;
+    width: auto;
+    position: static;
+    z-index: 0;
+    padding-bottom: 0;
+    min-height: 0;
+    flex-direction: row;
+    margin-left: auto;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 46px;
+    margin-right: 76px;
+    gap: 86px;
+  }
+  .btn-cancel {
+    padding-top: 0;
+  }
+  .logo {
+    margin-top: 50px;
+    margin-left: 85px;
+  }
+  nav ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex .left h1 {
+    font-family: Lora;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-right: 184px;
+    margin-top: 138px;
+  }
+  .left {
+    padding-left: 77px;
+  }
+  .background {
+    max-width: 737px;
+  }
+  .aliza-webber {
+    max-width: 410px;
+    min-height: 189px;
+    margin-left: 907px;
+  }
+  .img-info img {
+    max-width: 50px;
+  }
+  .name {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 18px;
+  }
+  .profession {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .designed {
+    font-family: Lora;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    padding-left: 26px;
+    max-width: 287px;
+  }
+  .img-container {
+    padding: 8px 17px;
+    margin: 18px 19px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .fa-bars {
+    display: none;
+  }
+}
